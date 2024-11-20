@@ -1,0 +1,19 @@
+{
+  "name": "fsfe",
+  "version": "1.0.0",
+  "description": "Course work Fullstack for Front End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pedrogritter/fsfe.git"
+  },
+  "author": "Pedro Gritter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrogritter/fsfe/issues"
+  },
+  "homepage": "https://github.com/pedrogritter/fsfe#readme"
+}
