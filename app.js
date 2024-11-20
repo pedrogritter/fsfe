@@ -1,11 +1,18 @@
-const http = require("http");
-const fs = require('fs');
-const PORT = 3000;
+const express = require("express")
+const app = express()
 
-const server = http.createServer(function (req, res) {
-	res.writeHead(200, {'content-type': 'text/html'});
-	fs.createReadStream('index.html').pipe(res);
+const server = app.listen(3000, () => { // create a HTTP server on port 3000
+    console.log(`Express running → PORT ${server.address().port}`)
 });
 
-server.listen(PORT);
-console.log(`Server started on port ${PORT}`)
+app.use(express.static(__dirname, { // host the whole directory
+        extensions: ["html", "htm", "gif", "png"],
+    }))
+
+app.get("/", (req, res) => {
+    return res.sendFile("index.html")
+})
+
+app.get("*", (req, res) => {
+    return res.sendStatus(404)
+})

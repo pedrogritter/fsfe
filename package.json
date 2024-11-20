@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pedrogritter/fsfe/issues"
   },
-  "homepage": "https://github.com/pedrogritter/fsfe#readme"
+  "homepage": "https://github.com/pedrogritter/fsfe#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
