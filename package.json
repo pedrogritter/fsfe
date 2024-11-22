@@ -18,6 +18,7 @@
   "homepage": "https://github.com/pedrogritter/fsfe#readme",
   "dependencies": {
     "express": "^4.21.1",
+    "sqlite3": "^5.1.7",
     "ws": "^8.18.0"
   }
 }
